@@ -71,9 +71,9 @@ export default function Home() {
               </p>
               <p className="text-sm text-gray-500 ">
                 <span className="text-gray-700 font-normal">เผยแพร่:</span> 30
-                มิ.ย. 2568 15:47{" "}
+                มิ.ย. 2568 14:53{" "}
                 <span className="text-gray-700 font-normal">ปรับปรุง:</span> 30
-                มิ.ย. 2568 15:47
+                มิ.ย. 2568 14:53
                 <span className="text-gray-700 font-normal">
                   {" "}
                   โดย: ผู้จัดการออนไลน์
