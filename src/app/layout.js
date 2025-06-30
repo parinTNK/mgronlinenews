@@ -34,9 +34,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body>
-        <Nav />
+    <html lang="en" className="overflow-visible">
+      <body className="relative overflow-visible">
+        <Nav/>
         {children}
         
       </body>

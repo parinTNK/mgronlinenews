@@ -1,3 +1,4 @@
+"use client";
 import {
   FaFacebookF,
   FaLink,
@@ -25,7 +26,16 @@ export default function Home() {
         <div className=" flex flex-col md:flex-row relative ">
           {/* left div */}
           <div className="flex flex-col md:w-2/3 mx-4">
-            <p className="font-THSarabunNew md:text-[20px] text-[26px] text-blue-600 md:text-blue-500 md:font-bold font-medium  py-2 text-base/7 border-gray-200 md:border-gray-300 border-b-1 inline-block">
+            <p
+              className="font-THSarabunNew md:text-[20px] text-[26px] text-blue-600 md:text-blue-500 md:font-bold font-medium  py-2 text-base/7 border-gray-200 md:border-gray-300 border-b-1 inline-block cursor-pointer"
+              onClick={() =>
+                window.open(
+                  "https://www.mgronline.com",
+                  "_blank",
+                  "noopener,noreferrer"
+                )
+              }
+            >
               หน้าหลัก <span className="text-gray-600">/</span> ทันเหตุการณ์{" "}
               <span className="text-gray-600">/</span> Breaking News{" "}
               <span className="text-gray-600">/</span> อาชญากรรม
@@ -36,7 +46,7 @@ export default function Home() {
                 ปิดบัญชีธนาคารและเว็บไซต์พนันออนไลน์เครือข่ายใหญ่รวม 78 แห่ง
                 โยงบริษัท Huione ในกัมพูชา เอี่ยวหลาน “ฮุนเซน”
               </p>
-              <p className="text-sm text-gray-500">
+              <p className="text-sm text-gray-500 ">
                 <span className="text-gray-700 font-normal">เผยแพร่:</span> 28
                 มิ.ย. 2568 21:47{" "}
                 <span className="text-gray-700 font-normal">ปรับปรุง:</span> 18
@@ -109,7 +119,7 @@ export default function Home() {
                 className="w-full h-auto object-cover mt-10"
               />
 
-              <p className="font-THSarabunNew  text-[23px] leading-7 text-gray-900 mt-10">
+              <p className="font-THSarabunNew  text-[24px] leading-7 text-gray-900 mt-10">
                 พล.ต.ท.ไตรรงค์ ผิวพรรณ
                 ผู้บัญชาการตำรวจสืบสวนสอบสวนอาชญากรรมทางเทคโนโลยี (ผบช.สอท.)
                 เปิดเผยความคืบหน้าจากการสืบสวนในคดีที่มีความเกี่ยวพันกับบริษัท
@@ -120,7 +130,7 @@ export default function Home() {
                 และสามารถดำเนินการ “ปิดบัญชีธนาคาร”
                 ที่เกี่ยวข้องกับกิจกรรมผิดกฎหมายไปแล้วหลายสิบบัญชี
               </p>
-              <p className="font-THSarabunNew  text-[23px] leading-7 text-gray-900 mt-4">
+              <p className="font-THSarabunNew  text-[24px] leading-7 text-gray-900 mt-4">
                 จากข้อมูลเส้นทางการเงินที่ตรวจพบ พบว่ากลุ่มคนร้ายมีพฤติกรรม
                 “ฟอกเงิน” ผ่านกระบวนการแปลงทรัพย์สิน
                 โดยเริ่มจากการโอนเงินจากบัญชีผู้เสียหายไปยัง “บัญชีม้า”
@@ -131,17 +141,17 @@ export default function Home() {
                 ที่เชื่อว่าอาจมีฐานปฏิบัติการอยู่ในประเทศกัมพูชา
                 และตั้งอยู่ในพื้นที่ที่มีกลุ่มสแกมเมอร์หรือแก๊งอาชญากรรมข้ามชาติครอบงำ
               </p>
-              <p className="font-THSarabunNew font-semibold  text-[23px] leading-7 text-gray-900 mt-4">
+              <p className="font-THSarabunNew font-semibold  text-[24px] leading-7 text-gray-900 mt-4">
                 รายชื่อเว็บไซต์ที่ถูกสั่งปิดล่าสุด
               </p>
-              <p className="font-THSarabunNew  text-[23px] leading-7 text-gray-900 mt-1">
+              <p className="font-THSarabunNew  text-[24px] leading-7 text-gray-900 mt-1">
                 ในส่วนของเว็บไซต์พนันออนไลน์ที่เกี่ยวข้องกับเครือข่ายการเงินผิดกฎหมายดังกล่าว
                 ขณะนี้ตำรวจไซเบอร์ได้ดำเนินการสั่งปิดเว็บไซต์ไปแล้วจำนวนทั้งสิ้น
                 78 แห่ง
                 ซึ่งมีทั้งเว็บที่เปิดมาเป็นเวลานานและเว็บที่เพิ่งตั้งขึ้นใหม่เพื่อหลบเลี่ยงการตรวจสอบ
                 รายชื่อบางส่วน ได้แก่
               </p>
-              <ul className="grid grid-cols-2 md:grid-cols-3 gap-2 font-THSarabunNew text-[23px] leading-7 text-gray-900 mt-4">
+              <ul className="grid grid-cols-2 md:grid-cols-3 gap-2 font-THSarabunNew text-[24px] leading-7 text-gray-900 mt-4">
                 <li className="flex items-center">
                   <span className="w-[6px] h-[6px] bg-gray-600 rounded-full mr-3"></span>
                   LAGALAXY911
@@ -183,7 +193,7 @@ export default function Home() {
                   BetRich678
                 </li>
               </ul>
-              <p className="font-THSarabunNew text-[23px] leading-7 text-gray-900 mt-4">
+              <p className="font-THSarabunNew text-[24px] leading-7 text-gray-900 mt-4">
                 เจ้าหน้าที่ระบุว่าเว็บเหล่านี้มีลักษณะการดำเนินการคล้ายคลึงกัน
                 คือเปิดให้บริการการพนันออนไลน์แบบครบวงจร
                 มีระบบรับฝาก-ถอนผ่านบัญชีที่ไม่โปร่งใส
@@ -199,10 +209,10 @@ export default function Home() {
                 height={2000}
                 className="w-full h-auto object-cover mt-8"
               />
-              <p className="font-THSarabunNew font-semibold  text-[23px] leading-7 text-gray-900 mt-8">
+              <p className="font-THSarabunNew font-semibold  text-[24px] leading-7 text-gray-900 mt-8">
                 ความร่วมมือกับต่างประเทศและบริษัทเทคโนโลยี
               </p>
-              <p className="font-THSarabunNew  text-[23px] leading-7 text-gray-900 mt-1">
+              <p className="font-THSarabunNew  text-[24px] leading-7 text-gray-900 mt-1">
                 พล.ต.ท.ไตรรงค์ เผยเพิ่มเติมว่า
                 เจ้าหน้าที่ได้มีการประสานความร่วมมือกับหน่วยงานในต่างประเทศ
                 รวมถึงแพลตฟอร์มผู้ให้บริการกระเป๋าเงินดิจิทัล (Digital Wallet)
@@ -212,10 +222,10 @@ export default function Home() {
                 และบางแห่งก็ไม่ให้ความร่วมมือเลย
                 ซึ่งเป็นหนึ่งในอุปสรรคสำคัญของการสืบสวน
               </p>
-              <p className="font-THSarabunNew font-semibold  text-[23px] leading-7 text-gray-900 mt-4">
+              <p className="font-THSarabunNew font-semibold  text-[24px] leading-7 text-gray-900 mt-4">
                 ข้อสังเกตต่อ Huione Group และประเด็นการเมือง
               </p>
-              <p className="font-THSarabunNew  text-[23px] leading-7 text-gray-900 mt-1">
+              <p className="font-THSarabunNew  text-[24px] leading-7 text-gray-900 mt-1">
                 แม้จะมีข้อมูลเชื่อมโยงกับ Huione Group อย่างต่อเนื่อง
                 แต่พล.ต.ท.ไตรรงค์ ระบุว่า
                 ยังไม่สามารถยืนยันได้ว่าบริษัทดังกล่าวมีส่วนเกี่ยวข้องโดยตรงกับการกระทำผิด
@@ -225,10 +235,10 @@ export default function Home() {
                 แต่ทางเจ้าหน้าที่ไทยยังไม่สามารถยืนยันได้อย่างเป็นทางการ
                 จึงยังไม่สามารถชี้ชัดในประเด็นนี้
               </p>
-              <p className="font-THSarabunNew font-semibold  text-[23px] leading-7 text-gray-900 mt-4">
+              <p className="font-THSarabunNew font-semibold  text-[24px] leading-7 text-gray-900 mt-4">
                 เตือนภัย Fake News และการใช้ AI ปลอมแปลงข้อมูล
               </p>
-              <p className="font-THSarabunNew  text-[23px] leading-7 text-gray-900 mt-1">
+              <p className="font-THSarabunNew  text-[24px] leading-7 text-gray-900 mt-1">
                 ในช่วงที่ความขัดแย้งและความไม่ไว้วางใจระหว่างประชาชนและสื่อบางส่วนยังคงมีอยู่
                 พล.ต.ท.ไตรรงค์ ฝากเตือนประชาชนให้ระวังการแชร์ข่าวปลอม (Fake
                 News)
@@ -237,7 +247,7 @@ export default function Home() {
                 หากข่าวสารใดไม่มีแหล่งที่มาแน่ชัดหรือไม่ได้รับการยืนยันจากสื่อหลัก
                 ขอให้หลีกเลี่ยงการส่งต่อโดยเด็ดขาด
               </p>
-              <p className="font-THSarabunNew  text-[23px] text-gray-900 mt-4">
+              <p className="font-THSarabunNew  text-[24px] text-gray-900 mt-4">
                 นอกจากนี้ ยังเตือนกลุ่มผู้ไม่หวังดีที่คิดจะใช้เสรีภาพในทางผิด
                 ว่าการแสดงความคิดเห็นในโลกออนไลน์สามารถทำได้ภายใต้กรอบของกฎหมาย
                 แต่การสร้างข่าวเท็จเพื่อปลุกปั่น ถือเป็นการกระทำผิดตาม
@@ -375,7 +385,16 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="flex md:w-2/3 hover:bg-gray-200 text-gray-800 cursor-pointer items-center justify-center text-[24px] md:text-[20px] py-[7px] rounded-lg mt-4">
+          <div
+            className="flex md:w-2/3 hover:bg-gray-200 text-gray-800 cursor-pointer items-center justify-center text-[24px] md:text-[20px] py-[7px] rounded-lg mt-4"
+            onClick={() =>
+              window.open(
+                "https://www.mgronline.com",
+                "_blank",
+                "noopener,noreferrer"
+              )
+            }
+          >
             ข่าวอื่นในหมวด
           </div>
         </div>
