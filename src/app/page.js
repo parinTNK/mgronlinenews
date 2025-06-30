@@ -12,7 +12,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="max-w-[1158px] mx-0 md:mx-auto mb-100">
+    <div className="max-w-[1158px] mx-0 md:mx-auto">
       <div className="md:container md:mx-auto  md:mt-10 mt-4  flex justify-center items-center">
         <Image
           src="/image.png"
