@@ -26,20 +26,14 @@ export default function Home() {
         <div className=" flex flex-col md:flex-row relative ">
           {/* left div */}
           <div className="flex flex-col md:w-2/3 mx-4">
-            <p
+            <a
+              href="https://www.mgronline.com"
               className="font-THSarabunNew md:text-[20px] text-[26px] text-blue-600 md:text-blue-500 md:font-bold font-medium  py-2 text-base/7 border-gray-200 md:border-gray-300 border-b-1 inline-block cursor-pointer"
-              onClick={() =>
-                window.open(
-                  "https://www.mgronline.com",
-                  "_blank",
-                  "noopener,noreferrer"
-                )
-              }
             >
               หน้าหลัก <span className="text-gray-600">/</span> ทันเหตุการณ์{" "}
               <span className="text-gray-600">/</span> Breaking News{" "}
               <span className="text-gray-600">/</span> อาชญากรรม
-            </p>
+            </a>
             <div className="mt-3">
               <p className="text-2xl text-[#337AB7]">
                 ตำรวจไซเบอร์เร่งขยายผล
@@ -74,7 +68,7 @@ export default function Home() {
                     />
                   </a>
                   <a
-                    href="https://x.com/intent/tweet?original_referer=https%3A%2F%2Fmgronline.com%2Fcrime%2Fdetail%2F9680000056583&text=%E0%B8%95%E0%B8%A3.%E0%B9%84%E0%B8%8B%E0%B9%80%E0%B8%9A%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%9E%E0%B8%9A%E0%B9%80%E0%B8%AA%E0%B9%89%E0%B8%99%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%80%E0%B8%A7%E0%B9%87%E0%B8%99%E0%B8%9E%E0%B8%99%E0%B8%B1%E0%B8%99-%E0%B9%81%E0%B8%81%E0%B9%8A%E0%B8%87%E0%B8%84%E0%B8%AD%E0%B8%A5%E0%B8%AF%20%E0%B9%82%E0%B8%A2%E0%B8%87%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B8%A9%E0%B8%B1%E0%B8%97%20Huione%20%E0%B9%83%E0%B8%99%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2%20%E0%B9%80%E0%B8%AD%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%A7%E0%B8%AB%E0%B8%A5%E0%B8%B2%E0%B8%99%20%E2%80%9C%E0%B8%AE%E0%B8%B8%E0%B8%99%E0%B9%80%E0%B8%8B%E0%B8%99%E2%80%9D%20%E0%B8%AB%E0%B8%A3%E0%B8%B7%E0%B8%AD%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%81%E0%B8%B3%E0%B8%A5%E0%B8%B1%E0%B8%87%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A&url=https%3A%2F%2Fmgronline.com%2Fcrime%2Fdetail%2F9680000056583&original_referer=https://mgronline.com/crime/detail/9680000056583"
+                    href="https://x.com/intent/tweet?original_referer=https%3A%2F%2Fmgronline.com%2Fcrime%2Fdetail%2F9680000056583&text=%E0%B8%95%E0%B8%A3.%E0%B9%84%E0%B8%8B%E0%B9%80%E0%B8%9A%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%9E%E0%B8%9A%E0%B9%80%E0%B8%AA%E0%B9%89%E0%B8%99%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%80%E0%B8%A7%E0%B9%87%E0%B8%99%E0%B8%9E%E0%B8%99%E0%B8%B1%E0%B8%99-%E0%B9%81%E0%B8%81%E0%B9%8A%E0%B8%87%E0%B8%84%E0%B8%AD%E0%B8%A5%E0%B8%AF%20%E0%B9%82%E0%B8%A2%E0%B8%87%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B8%A9%E0%B8%B1%E0%B8%97%20Huione%20%E0%B9%83%E0%B8%99%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2%20%E0%B9%80%E0%B8%AD%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%A7%E0%B8%AB%E0%B8%A5%E0%B8%B2%E0%B8%99%20%E2%80%9C%E0%B8%AE%E0%B8%B8%E0%B8%99%E0%B9%80%E0%B8%8B%E0%B8%99%E2%80%9D%20%E0%B8%AB%E0%B8%A3%E0%B8%AD%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%81%E0%B8%B3%E0%B8%A5%E0%B8%B1%E0%B8%87%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A&url=https%3A%2F%2Fmgronline.com%2Fcrime%2Fdetail%2F9680000056583&original_referer=https://mgronline.com/crime/detail/9680000056583"
                     className="rounded-full bg-sky-500 p-2 text-white"
                   >
                     <FaTwitter />
@@ -258,7 +252,7 @@ export default function Home() {
               <div className="mt-4 flex items-center justify-between">
                 <div className="flex space-x-2">
                   <a
-                    href="#"
+                    href="https://www.facebook.com/share_channel/?type=reshare&link=https%3A%2F%2Fmgronline.com%2Fcrime%2Fdetail%2F9680000056583&app_id=574706704498021&source_surface=external_reshare&display&hashtag"
                     className="rounded-full bg-[#3B5998] p-2 text-white"
                   >
                     <FaFacebookF />
@@ -273,7 +267,7 @@ export default function Home() {
                     />
                   </a>
                   <a
-                    href="#"
+                    href="https://x.com/intent/tweet?original_referer=https%3A%2F%2Fmgronline.com%2Fcrime%2Fdetail%2F9680000056583&text=%E0%B8%95%E0%B8%A3.%E0%B9%84%E0%B8%8B%E0%B9%80%E0%B8%9A%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%9E%E0%B8%9A%E0%B9%80%E0%B8%AA%E0%B9%89%E0%B8%99%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%80%E0%B8%A7%E0%B9%87%E0%B8%99%E0%B8%9E%E0%B8%99%E0%B8%B1%E0%B8%99-%E0%B9%81%E0%B8%81%E0%B9%8A%E0%B8%87%E0%B8%84%E0%B8%AD%E0%B8%A5%E0%B8%AF%20%E0%B9%82%E0%B8%A2%E0%B8%87%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B8%A9%E0%B8%B1%E0%B8%97%20Huione%20%E0%B9%83%E0%B8%99%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B9%E0%B8%8A%E0%B8%B2%20%E0%B9%80%E0%B8%AD%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%A7%E0%B8%AB%E0%B8%A5%E0%B8%B2%E0%B8%99%20%E2%80%9C%E0%B8%AE%E0%B8%B8%E0%B8%99%E0%B9%80%E0%B8%8B%E0%B8%99%E2%80%9D%20%E0%B8%AB%E0%B8%A3%E0%B8%AD%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%81%E0%B8%B3%E0%B8%A5%E0%B8%B1%E0%B8%87%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A&url=https%3A%2F%2Fmgronline.com%2Fcrime%2Fdetail%2F9680000056583&original_referer=https://mgronline.com/crime/detail/9680000056583"
                     className="rounded-full bg-sky-500 p-2 text-white"
                   >
                     <FaTwitter />
@@ -385,18 +379,12 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div
+          <a
+            href="https://www.mgronline.com"
             className="flex md:w-2/3 hover:bg-gray-200 text-gray-800 cursor-pointer items-center justify-center text-[24px] md:text-[20px] py-[7px] rounded-lg mt-4"
-            onClick={() =>
-              window.open(
-                "https://www.mgronline.com",
-                "_blank",
-                "noopener,noreferrer"
-              )
-            }
           >
             ข่าวอื่นในหมวด
-          </div>
+          </a>
         </div>
       </main>
     </div>

@@ -8,8 +8,10 @@ import { FaSignInAlt } from "react-icons/fa";
 function Nav() {
 return (
     <nav className="sticky top-0 z-50 flex items-center justify-between p-2 bg-white shadow-md md:p-2">
-        <div className="flex items-center cursor-pointer"
-         onClick={() => window.open("https://www.mgronline.com", "_blank", "noopener,noreferrer")}>
+        <a
+          href="https://www.mgronline.com"
+          className="flex items-center cursor-pointer"
+        >
             <IoMenu className='text-2xl text-gray-500' />
             <Image
                 src="/MGR.png"
@@ -18,7 +20,7 @@ return (
                 height={30}
                 className="inline-block ml-2 h-7 w-auto md:h-7"
             />
-        </div>
+        </a>
         <div className="hidden md:flex items-center border-gray-300 border rounded-2xl overflow-hidden">
             <input
                 type="text"
@@ -29,9 +31,9 @@ return (
                 <IoSearch className="text-gray-600 text-lg mx-5" />
             </button>
         </div>
-        <div
+        <a
+          href="https://www.mgronline.com"
           className="flex items-center space-x-2 md:space-x-0 cursor-pointer"
-          onClick={() => window.open("https://www.mgronline.com", "_blank", "noopener,noreferrer")}
         >
           <Image
               src="/123.png"
@@ -62,7 +64,7 @@ return (
                   <FaSignInAlt className="w-4 h-4" />
           </button>
           <GoKebabHorizontal className='text-xl text-gray-500 ml-1 md:ml-4' style={{ transform: 'rotate(90deg)' }} />
-        </div>
+        </a>
     </nav>
 )
 }
