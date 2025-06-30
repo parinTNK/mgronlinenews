@@ -67,7 +67,7 @@ export default function Home() {
               <p className="text-2xl text-[#337AB7]">
                 ตำรวจไซเบอร์เร่งขยายผล
                 ปิดบัญชีธนาคารและเว็บไซต์พนันออนไลน์เครือข่ายใหญ่รวม 78 แห่ง
-                โยงบริษัท Huione ในกัมพูชา เอี่ยวหลาน “ฮุนเซน”
+                โยงบริษัท Huione ในกัมพูชา เอี่ยวหลาน "ฮุนเซน"
               </p>
               <p className="text-sm text-gray-500 ">
                 <span className="text-gray-700 font-normal">เผยแพร่:</span> 30
@@ -84,10 +84,12 @@ export default function Home() {
                   <a
                     href={facebookShareUrl}
                     className="rounded-full bg-[#3B5998] p-2 text-white"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <FaFacebookF />
                   </a>
-                  <a href={lineShareUrl} className="rounded-full bg-[#00b900] p-[2px]">
+                  <a href={lineShareUrl} className="rounded-full bg-[#00b900] p-[2px]" target="_blank" rel="noopener noreferrer">
                     <Image
                       src="https://mgronline.com/images/line-it-logo.png"
                       alt="Line Logo"
@@ -99,15 +101,22 @@ export default function Home() {
                   <a
                     href={twitterShareUrl}
                     className="rounded-full bg-sky-500 p-2 text-white"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <FaTwitter />
                   </a>
-                  <a
-                    href="#"
-                    className="rounded-full bg-gray-400 p-2 text-white"
+                  <button
+                    onClick={copyToClipboard}
+                    className="rounded-full bg-gray-400 p-2 text-white relative"
                   >
                     <FaLink />
-                  </a>
+                    {copySuccess && (
+                      <span className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 bg-black text-white text-xs py-1 px-2 rounded">
+                        คัดลอกแล้ว
+                      </span>
+                    )}
+                  </button>
                   <a
                     href="#"
                     className="rounded-full bg-[#f7931f] p-2 text-white"
@@ -150,13 +159,13 @@ export default function Home() {
                 ซึ่งถูกสงสัยว่ามีบทบาทในการรับโอนเงินจากเว็บพนันออนไลน์และเครือข่ายแก๊งคอลเซ็นเตอร์ข้ามชาติ
                 ซึ่งหลอกลวงประชาชนชาวไทยเป็นวงกว้าง โดยระบุว่า
                 ขณะนี้เจ้าหน้าที่ตำรวจไซเบอร์ได้ขยายผลเชิงรุกต่อเนื่อง
-                และสามารถดำเนินการ “ปิดบัญชีธนาคาร”
+                และสามารถดำเนินการ "ปิดบัญชีธนาคาร"
                 ที่เกี่ยวข้องกับกิจกรรมผิดกฎหมายไปแล้วหลายสิบบัญชี
               </p>
               <p className="font-THSarabunNew  text-[24px] leading-7 text-gray-900 mt-4">
                 จากข้อมูลเส้นทางการเงินที่ตรวจพบ พบว่ากลุ่มคนร้ายมีพฤติกรรม
-                “ฟอกเงิน” ผ่านกระบวนการแปลงทรัพย์สิน
-                โดยเริ่มจากการโอนเงินจากบัญชีผู้เสียหายไปยัง “บัญชีม้า”
+                "ฟอกเงิน" ผ่านกระบวนการแปลงทรัพย์สิน
+                โดยเริ่มจากการโอนเงินจากบัญชีผู้เสียหายไปยัง "บัญชีม้า"
                 ที่กระจายอยู่ตามพื้นที่ต่าง ๆ
                 แล้วนำเงินเหล่านั้นแปลงเป็นสินทรัพย์ดิจิทัล (Cryptocurrency)
                 จากนั้นจึงนำสกุลดิจิทัลไปเปลี่ยนกลับเป็นเงินสดหรือทรัพย์สินผ่านบริษัทที่เชื่อมโยงกับกลุ่มคนร้าย
@@ -283,10 +292,12 @@ export default function Home() {
                   <a
                     href={facebookShareUrl}
                     className="rounded-full bg-[#3B5998] p-2 text-white"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <FaFacebookF />
                   </a>
-                  <a href={lineShareUrl} className="rounded-full bg-[#00b900] p-[2px]">
+                  <a href={lineShareUrl} className="rounded-full bg-[#00b900] p-[2px]" target="_blank" rel="noopener noreferrer">
                     <Image
                       src="https://mgronline.com/images/line-it-logo.png"
                       alt="Line Logo"
@@ -298,15 +309,22 @@ export default function Home() {
                   <a
                     href={twitterShareUrl}
                     className="rounded-full bg-sky-500 p-2 text-white"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <FaTwitter />
                   </a>
-                  <a
-                    href="#"
-                    className="rounded-full bg-gray-400 p-2 text-white"
+                  <button
+                    onClick={copyToClipboard}
+                    className="rounded-full bg-gray-400 p-2 text-white relative"
                   >
                     <FaLink />
-                  </a>
+                    {copySuccess && (
+                      <span className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 bg-black text-white text-xs py-1 px-2 rounded">
+                        คัดลอกแล้ว
+                      </span>
+                    )}
+                  </button>
                   <a
                     href="#"
                     className="rounded-full bg-[#f7931f] p-2 text-white"
