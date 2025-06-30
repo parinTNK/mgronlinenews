@@ -41,10 +41,10 @@ export default function Home() {
                 โยงบริษัท Huione ในกัมพูชา เอี่ยวหลาน “ฮุนเซน”
               </p>
               <p className="text-sm text-gray-500 ">
-                <span className="text-gray-700 font-normal">เผยแพร่:</span> 28
-                มิ.ย. 2568 21:47{" "}
-                <span className="text-gray-700 font-normal">ปรับปรุง:</span> 18
-                มิ.ย. 2568 21:47
+                <span className="text-gray-700 font-normal">เผยแพร่:</span> 30
+                มิ.ย. 2568 15:47{" "}
+                <span className="text-gray-700 font-normal">ปรับปรุง:</span> 30
+                มิ.ย. 2568 15:47
                 <span className="text-gray-700 font-normal">
                   {" "}
                   โดย: ผู้จัดการออนไลน์
